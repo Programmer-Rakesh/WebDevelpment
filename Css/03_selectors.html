@@ -33,6 +33,49 @@
             border: 2px solid rgb(233, 9, 214);
         }
 
+        /*  Descendant selector  */
+        article p {
+            font-style: italic;
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 10px;
+        }
+        
+        /*  Child selector  */
+        ul > li {
+            background-color: orange;
+        }
+
+        /*  Adjacent sibling selector  */
+        h1 + p {
+            font-weight: bold;
+        }
+
+        /*  General sibling selector*/
+        h2 ~ p {
+            color: rgb(255, 136, 0);
+        }
+
+        /* Pseudo-class selector */
+        a:hover{
+            background-color: rgb(20, 168, 20);
+            text-decoration: none;
+            color: rgb(12, 12, 12);
+            padding: 5px;
+            margin: 4px;
+        }
+
+        /* Pseudo-element selector */
+        p::first-letter{
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        /* Grouping selector */
+        h1, h2, h3{
+            color: darkslategrey;
+        }
+
     </style>
 </head>
 <body>
@@ -50,7 +93,11 @@
 </body>
 <article>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, accusamus.</p>
-
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium est facere sunt sint, iure quam?</p>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+</article>
     <ul>
         <li>Direct</li>
         <li>
@@ -75,5 +122,4 @@
     <h3>Heading 3</h3>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ea provident eius voluptas necessitatibus sint. Quod magnam aliquid officiis quasi.</p>
-</article>
 </html>
