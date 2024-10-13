@@ -18,19 +18,30 @@
         .Y {
             background-color: rgb(20, 20, 20);
             padding: 10px;
-            height: 88px;
+            height: 68px;
+        }
+
+        .l {
+            font-size: xx-smallx-small;
+            text-align: center;
+            
+            font-size: x-small;
+            background-color: rgb(20, 20, 20);
+            padding: 20px;
+            height: 54px;
+            
         }
 
         div {
             
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 280;
-            font-size: 18px;
+            font-size: 15px;
             color: rgb(255, 255, 255);        
         }
 
         #c {
-            
+            font-size: large;           
             display: flex;
             justify-content: center;
             align-items: center;
@@ -48,12 +59,12 @@
         }
 
         .yeah {
-            height: 28vh;
+            height: 22vh;
             flex-direction: row;
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 90px;
+            gap: 76px;
         }
 
         .hell {
@@ -62,7 +73,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 90px;
+            gap: 76px;
         }
 
         .op {
@@ -71,7 +82,7 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            gap: 90px;
+            gap: 76px;
         }
 
         .no p {
@@ -79,10 +90,10 @@
         }
     
         .H{
-            background-color: rgb(20, 20, 20);
+            background-color: rgb(255, 255, 255);
             border: solid;
             border-radius: 15px;
-            border-width: 7px;
+            border-width: 0;
             border-color: rgb(20, 20, 20);
             box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
             transition: 0.6s;
@@ -90,12 +101,13 @@
         }
 
         .H:hover{
-            transform: scale(1.9);
+            transform: scale(1.7);
+            background-color:rgb(113, 117, 117) ;
             z-index: 2;
         }
     
         .t {
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
         }
 
         .d {
@@ -105,13 +117,17 @@
             justify-content: center;
             align-items: center;
         }
+
+        .Heading {
+            font-size: large;
+        }
         
     </style>
 </head>
 <body background="./B1.jpg" >
     <div class="Y" >
-        <h1>Hii there 😁</h1>
-        <p id="c">Contact Details : rakeshaps8866@gmail.com</p>
+        <h1 class="Heading" >Hii there 😁</h1>
+        <p id="c">"Money can buy happiness"</p>
         <div class="no" >
         <p>Join the world tour with your personal tour guide, RAKESH :)</p>
         </div>
@@ -119,31 +135,41 @@
 
     <div class="op" >
         <div class="H" >
-            <img src="./Egypt.jpg" width="240px" alt="">
+            <a href="https://www.lonelyplanet.com/egypt" target="_blank"> 
+            <img src="./Egypt.jpg" width="250px" alt="">
+            </a>
             <div class="d" >
             <span class="t" >EGYPT</span>
             </div>
         </div>
         <div class="H" >
-            <img src="./Thailand.jpg" width="240px" alt="">
+            <a href="https://www.tourismthailand.org/home" target="_blank" >
+                <img src="./Thailand.jpg" width="250px" alt="">
+            </a>
             <div class="d" >
             <span class="t" >THAILAND</span>
             </div>
         </div>
         <div class="H" >
-            <img src="./Japan.jpg" width="240px" alt="">
+            <a href="https://www.japan.travel/en/in/" target="_blank">
+            <img src="./Japan.jpg" width="250px" alt="">
+            </a>
             <div class="d" >
             <span class="t" >JAPAN</span>
             </div>
         </div>
         <div class="H" >
-            <img src="./India.jpg" width="240px" alt="">
+            <a href="https://www.lonelyplanet.com/india" target="_blank">
+            <img src="./India.jpg" width="250px" alt="">
+            </a>
             <div class="d" >
             <span class="t" >INDIA</span>
             </div>
         </div>
         <div class="H" >
-            <img src="./USA.jpg" width="240px" alt="" >
+            <a href="https://www.cia.gov/the-world-factbook/countries/united-states/" target="_blank" >
+            <img src="./USA.jpg" width="250px" alt="" >
+            </a>
             <div class="d" >
             <span class="t" >UNITED STATES</span>
             </div>
@@ -153,31 +179,41 @@
     </body>
         <div class="yeah" >
             <div class="H" >
-                <img src="./Paris.jpg" width="240px" alt="">
+                <a href="https://www.tripadvisor.in/Tourism-g187147-Paris_Ile_de_France-Vacations.html" target="_blank" >
+                <img src="./Paris.jpg" width="250px" alt="">
+                </a>
                 <div class="d" >
             <span class="t" >PARIS</span>
             </div>
             </div>
             <div class="H" >
-                <img src="./Russia.jpg" width="240px" alt="">
+                <a href="https://www.visitrussia.com/" target="_blank" >
+                <img src="./Russia.jpg" width="250px" alt="">
+                </a>
                 <div class="d" >
             <span class="t" >RUSSIA</span>
             </div>
             </div>
             <div class="H" >
-                <img src="./Nepal.jpg" width="240px" alt="">
+                <a href="https://www.kayak.co.in/Nepal-Hotels.173.dc.html?sck=SEM&skipapp=true" target="_blank" >
+                <img src="./Nepal.jpg" width="250px" alt="">
+                </a>
                 <div class="d" >
             <span class="t" >NEPAL</span>
             </div>
             </div>
             <div class="H" >
-                <img src="./Africa.jpg" width="240px" alt="">
+                <a href="https://africawanderlust.com/destinations/tourist-attractions-in-africa/" target="_blank" >
+                <img src="./Africa.jpg" width="250px" alt="">
+                </a>
                 <div class="d" >
             <span class="t" >AFRICA</span>
             </div>
             </div>
             <div class="H" >
-                <img src="./NK.jpg" width="240px" alt="">
+                <a href="https://www.uritours.com/" target="_blank" >
+                <img src="./NK.jpg" width="250px" alt="">
+                </a>
                 <div class="d" >
             <span class="t" >NORTH KOREA</span>
             </div>
@@ -186,34 +222,52 @@
 
     <div class="hell">
         <div class="H">
-            <img src="./Swizerland.jpg" width="240px" alt="">
+            <a href="https://www.myswitzerland.com/en-in/" target="_blank" >
+            <img src="./Swizerland.jpg" width="250px" alt="">
+            </a>
             <div class="d">
                 <span class="t">SWIZERLAND</span>
             </div>
         </div>
         <div class="H">
-            <img src="./Brazil.jpg" width="240px" alt="">
+            <a href="https://www.lonelyplanet.com/brazil" target="_blank" >
+            <img src="./Brazil.jpg" width="250px" alt="">
+            </a>
             <div class="d">
                 <span class="t">BRAZIL</span>
             </div>
         </div>
         <div class="H">
-            <img src="./China.jpg" width="240px" alt="">
+            <a href="https://www.chinatravel.com/guide" target="_blank" >
+            <img src="./China.jpg" width="250px" alt="">
+            </a>
             <div class="d">
                 <span class="t">CHINA</span>
             </div>
         </div>
         <div class="H">
-            <img src="./Turkey.jpg" width="240px" alt="">
+            <a href="https://visitturkey.in/" target="_blank" >
+            <img src="./Turkey.jpg" width="250px" alt="">
+            </a>
             <div class="d">
                 <span class="t">TURKEY</span>
             </div>
         </div>
         <div class="H">
-            <img src="./UK.jpg" width="240px" alt="">
+            <a href="https://www.visitbritain.com/en" target="_blank" >
+            <img src="./UK.jpg" width="250px" alt="">
+            </a>
             <div class="d">
                 <span class="t">UNITED KINKDOM</span>
             </div>
+        </div>
+    </div>
+    <div class="l" >
+        <div>
+            <h3>👉Help centre👈</h3>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, qui.</p>
         </div>
     </div>
 </body>
