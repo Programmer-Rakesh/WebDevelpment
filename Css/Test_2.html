@@ -113,15 +113,13 @@
             text-shadow: black;
         }
 
-
-
-
         .H:hover {
             transform: scale(1.6);
             background-color: rgb(255, 255, 255);
             z-index: 2;
 
         }
+
 
         /* .t {
             color: rgb(0, 0, 0);
@@ -136,19 +134,27 @@
         } */
 
         .t {
-            color: #000000; /* Black */
-            background-color: #0b82d1; /* Blue */
+            color: #ffffff; /* Black */
+            background-color: rgb(35, 131, 196); /* Blue */
             padding: 1.5px;
-            border-radius: 5px;
+            border-radius: 4.5px;
             font-weight: bold; /* Makes the text bold */
             box-shadow: 2px 2px 4px #000000; /* Adds a black shadow */
+            transition: transform 0.2s, background-color 0.2s /* Smooth transition */
+        }
+
+        .t:hover {
+            transform: scale(0.95); /* Shrinks the element slightly on hover */
+            background-color: rgb(21, 73, 187);
         }
 
 
 
         .d {
             font-weight: 200;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            
+            /* font-family: Arial, Helvetica, sans-serif;  */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -190,7 +196,7 @@
                     controlslist="nodownload noremoteplayback"></video>
             </a>
             <div class="d">
-                <span class="t">JAPAN</span>
+                <span class="t"> <a href="https://www.japan.travel/en/in/" target="_blank" >Visit</a> JAPAN</span>
             </div>
         </div>
         <div class="H">
@@ -199,15 +205,16 @@
                     controlslist="nodownload noremoteplayback"></video>
             </a>
             <div class="d">
-                <span class="t">INDIA</span>
+                <span class="t"><a href="https://www.lonelyplanet.com/india" target="_blank" >Visit</a> INDIA</span>
             </div>
         </div>
         <div class="H">
             <a href="https://www.cia.gov/the-world-factbook/countries/united-states/" target="_blank">
-                <img src="./USA.jpg" width="250px" alt="">
+                <video src="./USA Vid.mp4"  width="250px" style="border-radius: 15px;" controls autoplay muted loop
+                    controlslist="nodownload noremoteplayback" ></video>
             </a>
             <div class="d">
-                <span class="t">UNITED STATES</span>
+                <span class="t"><a href="https://www.cia.gov/the-world-factbook/countries/united-states/" target="_blank" >Visit</a> US</span>
             </div>
         </div>
     </div>
@@ -219,7 +226,7 @@
             <img src="./Paris.jpg" width="250px" alt="">
         </a>
         <div class="d">
-            <span class="t">PARIS</span>
+            <span class="t"> <a href="https://www.tripadvisor.in/Tourism-g187147-Paris_Ile_de_France-Vacations.html" target="_blank" >Visit</a> PARIS</span>
         </div>
     </div>
     <div class="H">
@@ -227,7 +234,7 @@
             <img src="./Russia.jpg" width="250px" alt="">
         </a>
         <div class="d">
-            <span class="t">RUSSIA</span>
+            <span class="t"> <a href="https://www.visitrussia.com/" target="_blank" >Visit</a> RUSSIA</span>
         </div>
     </div>
     <div class="H">
@@ -235,7 +242,7 @@
             <img src="./Nepal.jpg" width="250px" alt="">
         </a>
         <div class="d">
-            <span class="t">NEPAL</span>
+            <span class="t"> <a href="https://www.kayak.co.in/Nepal-Hotels.173.dc.html?sck=SEM&skipapp=true" target="_blank" >Visit</a> NEPAL</span>
         </div>
     </div>
     <div class="H">
@@ -243,7 +250,7 @@
             <img src="./Africa.jpg" width="250px" alt="">
         </a>
         <div class="d">
-            <span class="t">AFRICA</span>
+            <span class="t"> <a href="https://africawanderlust.com/destinations/tourist-attractions-in-africa/" target="_blank" >Visit</a> AFRICA</span>
         </div>
     </div>
     <div class="H">
@@ -251,7 +258,7 @@
             <img src="./NK.jpg" width="250px" alt="">
         </a>
         <div class="d">
-            <span class="t">NORTH KOREA</span>
+            <span class="t"> <a href="https://www.uritours.com/" target="_blank" >Visit</a> NORTH KOREA</span>
         </div>
     </div>
 </div>
