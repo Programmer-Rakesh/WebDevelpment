@@ -47,7 +47,7 @@ body {
     .main {
         border: red 2px solid;
         position: relative;
-        right: 40%;        
+        right: 40%;
     }
 
 }
@@ -76,7 +76,3 @@ body {
         font-size: x-large;
     }
 }
-
-
-
-
