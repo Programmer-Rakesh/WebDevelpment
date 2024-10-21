@@ -14,13 +14,14 @@
             background-position: center;
             background-attachment: fixed;
             overflow-x: hidden;
+            overflow-y: hidden;
         }
 
         .nav-container{
             position: relative;
             top: 25px;
             width: 80%;
-            left: 160px;
+            left: 280px;
         }
 
         .nav{
@@ -78,9 +79,61 @@
 
         .img{
             position: relative;
-            left: 30px;
-            bottom: 20px;
+            width: 94px;
+            left: 85px;
+            bottom: 30px;
+            border: yellow 4px solid;
+            width: 96px;
+            overflow: hidden;
         }
+
+        /* .planes {
+            overflow-y: auto;
+            max-height: 80vh;
+            width: 300px;
+            background-color: black;
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 5px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .planes img{
+            margin: 5px 0;
+            width: 100%;
+            height: 150%;
+            display: block;
+            object-fit: cover;
+        } */
+
+
+
+    .planes{
+        background-color: rgb(48, 46, 46);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        column-gap: 5px;
+        max-height: 79vh;
+        overflow-y: scroll;
+        width: 252px;
+        overflow-x: hidden;
+    }
+
+    .planes img{
+        border-radius: 5px;
+        margin: 4px;
+    }
+    span{
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+    }
 
     </style>
 </head>
@@ -109,7 +162,34 @@
     </div>
 
     <div class="img" >
-        <img src="./LOGO.jpeg" width="90px" alt="">
+        <img src="./LOGO.jpeg" width="95px" alt="">
+    </div>
+
+    <div class="planes" >
+        <img src="./F22.jpg"  width="230px" alt="">
+        <span>F-22 Raptor</span>       
+        <img src="./C17.jpg"  width="230px" alt="">
+        <span>C-17 Globmaster</span>
+        <img src="./Black hawk.jpg"  width="230px" alt="">
+        <span>UH-60 Black Hawk</span>
+        <img src="./B2 spirit.jpg" width="230px" alt="">
+        <span>B-2 Spirit</span>
+        <img src="./F15.jpg" width="230px" alt="">
+        <span>F-15 Eagle II</span>
+        <img src="./shinook.jpg" width="230px" alt="">
+        <span>CH-47 Shinook</span>
+        <img src="./F35.jpg"  width="230px" alt="">
+        <span>F-35 Lightning II</span>
+        <img src="./B1 lancer.jpg"  width="230px" alt="">
+        <span>B1-Lancer</span>
+        <img src="./F16.jpg"  width="230px" alt="">
+        <span>F-22</span>
+        <img src="./apache.jpg"  width="230px" alt="">
+        <span>AH-64 Apache</span>
+        <img src="./A10.jpg"  width="230px" alt="">
+        <span>A-10 Thurderbold II</span>
+        <img src="./F117.jpg"  width="230px" alt="">
+        <span>F-117 Nighthawk</span>
     </div>
 </body>
 </html>
