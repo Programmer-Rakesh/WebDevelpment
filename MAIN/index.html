@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        .nav-container {
+            position: relative;
+            top: 10px;
+            width: 80%;
+            left: 190px;
+        }
+
+        .nav {
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.26);
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 8px;
+        }
+
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 5px 15px;
+            position: relative;
+            display: block;
+        }
+
+        .nav a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: rgb(255, 255, 255);
+            transform: scale(0);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .nav a:hover::after {
+            transform: scale(1);
+        }
+
+        .nav .dropdown-content {
+            display: none;
+            width: 110px;
+        }
+
+        .ab:hover {
+            background-color: rgba(0, 0, 0, 0.185);
+        }
+
+        .nav .dropdown:hover .dropdown-content {
+            display: block;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.274);
+        }
+
+        .nav .ab::after {
+            content: none;
+        }
+
+        .log{
+            width: 150px;
+            display: flex;
+            flex-direction: row;
+            padding-right: 5px;
+        }
+        button{
+            border-radius: 5px;
+            padding: 3px;
+        }
+        #pp{
+            position: relative;
+            left: 25px;
+            
+        }
+    </style>
+</head>
+<body background="./B1.jpg" >
+    <div class="nav-container">
+        <nav class="nav">
+            <ul>
+                <li> <a href="#">Home</a> </li>
+    
+                <li class="dropdown">
+                    <a href="#">Continents</a>
+                    <div class="dropdown-content">
+                        <a class="ab" href="#">Africa</a>
+                        <a class="ab" href="#">Antartica</a>
+                        <a class="ab" href="#">Asia</a>
+                        <a class="ab" href="#">Europe</a>
+                        <a class="ab" href="#">North America</a>
+                        <a class="ab" href="#">South America</a>
+                        <a class="ab" href="#">Australia</a>
+                    </div>
+                </li>
+    
+    
+                <li class="dropdown">
+                    <a href="#">About</a>
+                    <div class="dropdown-content">
+                        <a class="ab" href="./02_back_story.html">Wbsite</a>
+                        <a class="ab" href="#">Team</a>
+                        <a class="ab" href="#">Contact</a>
+                    </div>
+                </li>
+                <div class="log" >
+                    <li> <button type="button">Sign up</button> </li>
+                    <li id="pp" > <button class="login">Sign in</button> </li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
