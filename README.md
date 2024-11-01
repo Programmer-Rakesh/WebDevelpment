@@ -1,4 +1,2 @@
 # WebDevelpment
 
-
-Only HTML & CSS.
