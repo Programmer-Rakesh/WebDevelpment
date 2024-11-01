@@ -23,4 +23,23 @@ let middlename;
 let lastname = undefined;
 console.log(firstname);      // null
 console.log(middlename);     // undefined
-console.log(lastname);       //undefined
+console.log(lastname);       // undefined
+
+// String
+
+let myString = "hello"
+let myStringone = 'hello'
+let oldGreet = myString + ' hitesh !'     // Will print hello hitesh !
+
+console.log(oldGreet)
+
+let greetMessage = 'hello ${username} !' ;    // Will print hello hitesh !
+console.log(greetMessage);
+
+let demoOne = 'value is ${2 * 2}';
+console.log(demoOne);
+
+let sm1 = Symbol("rakesh")
+let sm2 = Symbol("rakesh")
+
+console.log(sm1 == sm2);   // false
