@@ -5,25 +5,29 @@
     font-family: "poppins", sans-serif;
 }
 
-body {
+/* body {
+    border: red solid 3px;
     position: relative;
-    left: 20px;
-    top: 90px;
-    min-height: 100vh;
-    background-size: cover;
+    left: 30px;
+    top: 70px;
+    width: 20%;
+    min-height: 10vh;
     background-position: center;
-}
+} */
 
 .container {
     position: relative;
+    top: 10vh;
+    left: 40px;
     width: 250px;
-    height: 310px;
+    height: 74px;
     background: rgba(72, 19, 158, 0.39);
     backdrop-filter: blur(30px);
     border: 2px solid rgba(255, 255, 255, .1);
     border-radius: 16px;
     padding: 15px;
     color: #fff;
+    transition: height .6s ease;
 }
 
 .search-box {
@@ -79,6 +83,30 @@ body {
     margin: 20px 0;
 }
 
+.weather-box,
+.weather-details,
+.not-found{
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.weather-box.active,
+.weather-details.active,
+.not-found.active {
+    visibility: visible;
+}
+
+.weather-box .box,
+.weather-details .box{
+    transform: translateY(-100%);
+}
+.weather-box.active .box,
+.weather-details.active .box {
+    transform: translateY(0%);
+    transition: transform 1s ease;
+    transition-delay: .6s;
+}
+
 .weather-box img {
     width: 45%;
 }
@@ -118,16 +146,23 @@ body {
     display: flex;
     align-items: center;
     width: 50%;
+    transform: translateY(-100%);
+}
+.weather-details.active .humidity,
+.weather-details.active .wind{
+    transform: translateY(0%);
+    transition: transform 1s ease;
+    transition-delay: 1.2s;
 }
 
 .weather-details .humidity {
     padding-left: 8px;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
 }
 
 .weather-details .wind {
     padding-right: 8px;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
 }
 
 .weather-details i {
@@ -145,3 +180,23 @@ body {
     font-size: 10px;
     font-weight: 500;
 }
+
+.not-found{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 110px;
+}
+
+.not-found img{
+    width: 45%;
+}
+
+.not-found p{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+

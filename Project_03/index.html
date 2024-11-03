@@ -6,6 +6,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <style>
@@ -30,10 +31,9 @@
 
         .nav-container {       
             position: relative;
-            /* top: 0vh; */
+            top: 43px;
             width: 45%;
             left: 820px;
-            bottom: 23px;
         }
 
         .nav {
@@ -45,6 +45,7 @@
         .hh22{
             font-weight: bold;
         }
+        
 
         .nav ul {
             font-size: larger;
@@ -64,6 +65,19 @@
             display: block;
         }
 
+        .nav .hh22:hover {
+            color: #0fbde9; 
+        }
+        /* .nav .register::after {
+            content: none;
+        }
+        .nav .register:hover::after {
+            transform: none;
+        } */
+         .nav .hh22[href="##"]:hover::after {
+    content: none;
+}
+        
         .nav a::after {
             content: "";
             position: absolute;
@@ -73,7 +87,8 @@
             height: 2px;
             background-color: rgb(255, 255, 255);
             transform: scale(0);
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.4s ease-in-out;
+            
         }
 
         .nav a:hover::after {
@@ -82,7 +97,7 @@
 
         .nav .dropdown-content {
             display: none;
-            width: 140px;
+            width: 170px;
         }
 
         .ab:hover {
@@ -125,7 +140,7 @@
             padding: 0;
             position: relative;
             left: 250px;
-            bottom: 80px;
+            bottom: 5px;
             
         }
         .name{
@@ -138,23 +153,30 @@
 
         .line{
             border: red solid 3px;
-            width: 1600px;
-            /* position: relative;
-            bottom: 300px;
-            left: 68px; */
+            width: 780px;
+            position: relative;
+            top: 70px;
+            /* bottom: 10px; */
             margin: 20px 0;
             border: 0;
             height: 1px;
             background-color: rgb(255, 255, 255);
+            right: 30px;
         }    
     </style>
 </head>
 <body>
-    <div class="overlay" ></div> 
+    <!-- <div class="overlay" ></div>  -->
+
+
+
+    <!-- Navigation bar  -->
+
     <div class="nav-container">
         <nav class="nav">
             <ul>
-                <li class="hh22" > <a href="./index.html">Home</a> </li>
+                <!-- <li class="hh22" > <a href="./index.html">Home</a> </li> -->
+                <li > <a class="hh22" href="./index.html">Home</a> </li>
     
                 <li class="dropdown">
                     <a class="hh22" href="#">Continents</a>
@@ -168,8 +190,7 @@
                         <a class="ab" href="#">Australia</a>
                     </div>
                 </li>
-    
-    
+
                 <li class="dropdown">
                     <a class="hh22" href="./index.html">About</a>
                     <div class="dropdown-content">
@@ -178,25 +199,37 @@
                         <a class="ab" href="#">Contact</a>
                     </div>
                 </li>
-                <div class="log" >
+
+                <li>
+                    <a class="hh22" href="##">Login / Register</a>
+                </li>
+
+                <!-- <div class="log" >
                     <li> <button type="button">Register</button> </li>
                     <li id="pp" > <button class="login">Sign in</button> </li>
-                </div>
+                </div> -->
             </ul>
         </nav>
     </div>
+
+
     <div class="name1">
         <h1 class="name">Travelopedia</h1>
     </div>
-
     <hr class="line">
+
+
+
+
+    <!-- weather -->
 
     <div class="container">
         <div class="search-box">
             <i class='bx bxs-map'></i>
-            <input type="text" placeholder="enter your location">
+            <input type="text" placeholder="enter the location">
             <button class="bx bx-search"></button>
         </div>
+        
     
         <div class="weather-box">
             <div class="box">
@@ -232,8 +265,32 @@
                 </div>
             </div>
         </div>
+
+        <div class="not-found" >
+            <div class="box" >
+                <img src="images/404.png" alt="">
+                <p>Oops! Location not found </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- calender -->
+
+    <div class="hero">
+        <div class="calender">
+            <div class="left">
+                <p id="date">01</p>
+                <p id="day">Sunday</p>
+            </div>
+            <div class="right">
+                <p id="month">January</p>
+                <p id="year">2024</p>
+            </div>
+        </div>
     </div>
     
+    <script src="./script1.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
