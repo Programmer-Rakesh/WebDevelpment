@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <style>
         body {
-            background-image: url('./b1.jpg');
+            background-image: url('images/b1.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -15,20 +19,21 @@
             overflow-y: hidden;
             
         }
-        .overlay {
+        /* .overlay {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
             background-color: rgba(0, 0, 0, 0);
-        }
+        } */
 
         .nav-container {       
             position: relative;
-            top: 45px;
+            /* top: 0vh; */
             width: 45%;
-            left: 900px;
+            left: 820px;
+            bottom: 23px;
         }
 
         .nav {
@@ -115,21 +120,33 @@
         }
         .name1{
             /* border:  red 3px solid; */
-            width: 250px;
+            width: 310px;
             margin: 0;
             padding: 0;
             position: relative;
-            left: 335px;
-            bottom: 40px;
+            left: 250px;
+            bottom: 80px;
             
         }
         .name{
             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: bolder;
-            font-size: 50px;
+            font-size: 45px;
             color: white;
             text-decoration: underline;
         }
+
+        .line{
+            border: red solid 3px;
+            width: 1600px;
+            /* position: relative;
+            bottom: 300px;
+            left: 68px; */
+            margin: 20px 0;
+            border: 0;
+            height: 1px;
+            background-color: rgb(255, 255, 255);
+        }    
     </style>
 </head>
 <body>
@@ -137,7 +154,7 @@
     <div class="nav-container">
         <nav class="nav">
             <ul>
-                <li class="hh22" > <a href="#">Home</a> </li>
+                <li class="hh22" > <a href="./index.html">Home</a> </li>
     
                 <li class="dropdown">
                     <a class="hh22" href="#">Continents</a>
@@ -171,5 +188,52 @@
     <div class="name1">
         <h1 class="name">Travelopedia</h1>
     </div>
+
+    <hr class="line">
+
+    <div class="container">
+        <div class="search-box">
+            <i class='bx bxs-map'></i>
+            <input type="text" placeholder="enter your location">
+            <button class="bx bx-search"></button>
+        </div>
+    
+        <div class="weather-box">
+            <div class="box">
+                <div class="info-weather">
+                    <div class="weather"></div>
+                    <img src="images/cloud.png" alt="">
+                    <p class="temperature">0<span>℃</span></p>
+                    <p class="description">Broken Clouds</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="weather-details">
+            <div class="humidity">
+                <i class='bx bx-water'></i>
+                <div class="text">
+                    <div class="info-humidity">
+                        <span>0%</span>
+                    </div>
+                    <p>Humidity</p>
+                </div>
+            </div>
+    
+    
+            <div class="wind">
+                <div class="humidity"></div>
+                <i class='bx bx-wind'></i>
+                <div class="text">
+                    <div class="info-wind">
+                        <span>0%</span>
+                    </div>
+                    <p>Wind speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
