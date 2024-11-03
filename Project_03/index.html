@@ -6,13 +6,14 @@
     <title>Document</title>
     <style>
         body {
-            background-image: url('./B1.jpg');
+            background-image: url('./b1.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             overflow-x: hidden;
             overflow-y: hidden;
+            
         }
         .overlay {
             position: absolute;
@@ -20,24 +21,28 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(0, 0, 0, 0.637);
+            background-color: rgba(0, 0, 0, 0);
         }
 
-        .nav-container {
+        .nav-container {       
             position: relative;
-            top: 14px;
-            width: 50%;
-            left: 400px;
+            top: 45px;
+            width: 45%;
+            left: 900px;
         }
 
         .nav {
             border-radius: 5px;
-            background-color: white;
+            /* background-color: white; */
             font-family: Arial, Helvetica, sans-serif;
             padding: 2px;
         }
+        .hh22{
+            font-weight: bold;
+        }
 
         .nav ul {
+            font-size: larger;
             list-style-type: none;
             padding: 0;
             margin: 0;
@@ -48,7 +53,7 @@
 
         .nav a {
             text-decoration: none;
-            color: #000000;
+            color: #ffffff;
             padding: 5px 15px;
             position: relative;
             display: block;
@@ -61,7 +66,7 @@
             left: 0;
             width: 100%;
             height: 2px;
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
             transform: scale(0);
             transition: transform 0.3s ease-in-out;
         }
@@ -76,13 +81,13 @@
         }
 
         .ab:hover {
-            background-color: rgb(122, 116, 116);
+            background-color: rgb(19, 18, 18);
         }
 
         .nav .dropdown:hover .dropdown-content {
             display: block;
             position: absolute;
-            background-color: rgb(206, 195, 195);
+            background-color: rgba(90, 86, 86, 0.459);
         }
 
         .nav .ab::after {
@@ -90,32 +95,52 @@
         }
 
         .log{
-            width: 130px;
+            /* border: red solid 3px; */
+            width: 140px;
             display: flex;
             flex-direction: row;
-            padding-right: 5px;
+            padding-right: 0px;
         }
         button{
+            background-color: rgba(255, 255, 255, 0.226);
             border-radius: 5px;
-            padding: 2px;
+            padding: 6px;
+            color: white;
+            font-weight: bold;
         }
         #pp{
             position: relative;
             left: 25px;
             
         }
+        .name1{
+            /* border:  red 3px solid; */
+            width: 250px;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            left: 335px;
+            bottom: 40px;
+            
+        }
+        .name{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            font-size: 50px;
+            color: white;
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <div class="overlay" ></div>
-    
+    <div class="overlay" ></div> 
     <div class="nav-container">
         <nav class="nav">
             <ul>
-                <li> <a href="#">Home</a> </li>
+                <li class="hh22" > <a href="#">Home</a> </li>
     
                 <li class="dropdown">
-                    <a href="#">Continents</a>
+                    <a class="hh22" href="#">Continents</a>
                     <div class="dropdown-content">
                         <a class="ab" href="#">Africa</a>
                         <a class="ab" href="#">Antartica</a>
@@ -129,7 +154,7 @@
     
     
                 <li class="dropdown">
-                    <a href="./index.html">About</a>
+                    <a class="hh22" href="./index.html">About</a>
                     <div class="dropdown-content">
                         <a class="ab" href="#">Wbsite</a>
                         <a class="ab" href="#">Team</a>
@@ -137,11 +162,14 @@
                     </div>
                 </li>
                 <div class="log" >
-                    <li> <button type="button">Sign up</button> </li>
+                    <li> <button type="button">Register</button> </li>
                     <li id="pp" > <button class="login">Sign in</button> </li>
                 </div>
             </ul>
         </nav>
+    </div>
+    <div class="name1">
+        <h1 class="name">Travelopedia</h1>
     </div>
 </body>
 </html>
