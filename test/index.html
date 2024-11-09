@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./tailwind.config.js" ></script>
 </head>
-<body>
+<body class="overflow-x-hidden" >
 
     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[80%]" >
         <img src="./images/header-bg-color.png" alt="" class="w-full" >
@@ -30,24 +30,49 @@
         Contact<img src="./images/arrow-icon.png" alt="" 
         class="w-3" > </a>
 
-        <button class="block md:hidden ml-3" >
+        <button class="block md:hidden ml-3"  onclick="openMenu()" >
             <img src="./images/menu-black.png" alt="" class="w-6" >
         </button>
 
         </div>
         <!--modile menu-->
-        <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed right-0 
+        <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 
         top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500" >
 
-        <div class="absolute right-6 top-6" >
+        <div class="absolute right-6 top-6" onclick="closeMenu()" >
             <img src="./images/close-black.png" alt="" class="w-5 cursor-pointer" >
         </div>
-            <li> <a href="#top">Home</a> </li>
-            <li> <a href="#about">About me</a> </li>
-            <li> <a href="#services">Services</a> </li>
-            <li> <a href="#projects">My work</a> </li>
-            <li> <a href="#contact">Contact me</a> </li>
+            <li> <a href="#top" onclick="closeMenu()" >Home</a></li>
+            <li> <a href="#about" onclick="closeMenu()" >About me</a> </li>
+            <li> <a href="#services" onclick="closeMenu()" >Services</a> </li>
+            <li> <a href="#projects" onclick="closeMenu()" >My work</a> </li>
+            <li> <a href="#contact" onclick="closeMenu()" >Contact me</a> </li>
         </ul>
     </nav>
+
+    <!----header---->
+
+    <div class="w-11/12  max-w-3x1  text-centermx-auto h-screen  left-px flex flex-col
+    items-center justify-center gap-4" >
+        <img src="./images/profile-img.png" alt="" class="rounded-full w-32" >
+        <h3 class="flex items-end gap-2 text-xl md:text-2xl md-3" >Hi! I'm Rakesh Roy <img src="./images/hand-icon.png" alt="" class="w-6" > </h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[60px]" >Frontend web developer based in India.</h1>
+        <p class=""max-w-2xl mx-auto >Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut, nam totam voluptas quam quos in nesciunt laudantium voluptate eaque.</p>
+
+        <div>
+            <a href="#contact"
+            class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] 
+            to-[#da7d20] text-white flex items-center gap-2">Contact me <img src="./images/right-arrow-white.png" alt=""
+            class="w-4"> </a>
+
+            <a href="#contact" 
+            class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] 
+            to-[#da7d20] text-white flex items-center gap-2">Contact me <img src="./images/download-icon.png" alt="" 
+            class="w-4"> </a>
+        </div>
+
+    </div>
+
+    <script src="./script.js" ></script>
 </body>
 </html>
