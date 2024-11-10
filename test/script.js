@@ -23,3 +23,10 @@ window.addEventListener('scroll', ()=>{
         navLinks.classList.add('bg-white', 'shadow-sm', 'bg-opacity-50')
     }
 })
+//--------- light mode / dark mode
+
+// document.documentElement.classList.toggle(
+//   'dark',
+//   localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+// )
+
