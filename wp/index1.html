@@ -6,22 +6,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body background="./images/2962268.jpg" >
     <div class="container" >
-    <div class="input" >
-        <label for="number">
-            Number
-            <input type="number" name="number" id="a">
-            <button onclick="yeah()" type="submit">Go</button>
-            
-        </label>
-    </div>
-
-    <div class="output" >
-        <input width="100px" type="text" name="Result" id="f">
-        <!-- <img  id="img" src="./images/B1 lancer.jpg"  width="250px" alt=""> -->
-        <p id="umm" ></p>
-    </div>
+        <div class="input" >
+            <label for="number">
+                Number
+                <input type="number" name="number" id="a">
+                <button class="button" onclick="search()" type="submit">Go</button> 
+            </label>
+        </div>
+        <div class="output" >
+            <input width="100px" type="text" name="Result" id="f">
+            <p id="um" ></p>
+            <input class="intt" type="text" placeholder="Roll no." name="" id="op">
+            <input class="intt" type="text" placeholder="Date of joining" name="" id="ou">
+            <input class="intt" type="text" placeholder="Course" name="" id="ot">
+            <input class="intt" type="text" placeholder="Specialisation" name="" id="os">
+        </div>
+        
     </div>
     <script src="./script.js"></script>
 </body>
