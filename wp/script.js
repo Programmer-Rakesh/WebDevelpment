@@ -4,15 +4,15 @@ function yeah() {
         let pp = document.getElementById("umm")
 
         let img = document.createElement("img");
-        img.width = 300;
+        img.width = 250;
         
 
             if ( Okay<12){
-                f.value ="yeh";
+                f.value ="B1";
                 img.src = "./images/B1 lancer.jpg"
             }
             else{
-                f.value = "go daddy";
+                f.value = "B2";
                 img.src ="./images/B2 spirit.jpg"
             }  
 
