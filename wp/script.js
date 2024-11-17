@@ -20,7 +20,7 @@ function search() {
                 vs.value = "Specialisation : AI & ML"
             }
             else if ( okay==="24SECE1030020" ||  okay==="20"  || okay==="Piyush kumar singh" || okay === "Piyush"  || okay==="Piyush kumar" || okay ==="piyush"){
-                f.value = "Rakesh Roy";
+                f.value = "Piyush Kumar Singh";
                 img.src = "./images/pp2.jpg"
                 ww.value = "Roll no : 24SECE130020"
                 vg.value = "Date of Joining : 25/08/2024"
@@ -29,7 +29,7 @@ function search() {
             }
             else{
                 f.value = "B2";
-                img.src ="./images/B2 spirit.jpg"
+                img.src ="./images/else.jpg"
                 ww.value = "Roll no : 24SECE130051"
                 vg.value = "Date of Joining : 25/08/2024"
                 vp.value = "Course : BTech CSE"
