@@ -27,8 +27,16 @@ function search() {
                 vp.value = "Course : BTech CSE"
                 vs.value = "Specialisation : AI"
             }
+            else if ( okay==="24SECE1030012" ||  okay==="12"  || okay==="Subrat Upadhyay" || okay === "Subrat"  || okay==="Piyush upadhyay" || okay ==="subrat upadhyay"  || okay==="subrat"){
+                f.value = "Subrat Upadhyay";
+                img.src = "./images/pp3.jpg"
+                ww.value = "Roll no : 24SECE130012"
+                vg.value = "Date of Joining : 22/08/2024"
+                vp.value = "Course : BTech CSE"
+                vs.value = "Specialisation : Data Science"
+            }
             else{
-                f.value = "B2";
+                f.value = "Eren Eager";
                 img.src ="./images/else.jpg"
                 ww.value = "Roll no : 24SECE130051"
                 vg.value = "Date of Joining : 25/08/2024"
