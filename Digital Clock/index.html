@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body background="./images/pp.jpg" >
+    <div class="container">
+        
+        <din class="main">
+            <div id="d">
+                <span id="date">
+                16-11-2024</span>
+            </div>
+
+            <div id="c">
+                <span id="clock">
+                    15:46:00
+                </span>
+                <p id="weak"></p>
+            </div>
+        </din>
+
+        <div class="main1">
+            <div class="stopwatch"> STOP WATCH
+                <p id="stopwatch">00:00:00</p>
+                <div class="btn">
+                    <button onclick="starting()" class="btn1" id="start">start</button>
+                    <button onclick="stoping()" class="btn1" id="pause">pause</button>
+                    <button onclick="restarting()" class="btn1" id="restart">restart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,9 +1,17 @@
-const scriptURL = 'https://script.google.com/macros/s/AKfycbygdx8VG19nu7b-PVRLFmuH01NX6VhhT90ERQfr5rOdwNPBGE6CWnF1MtCHX3SohjWZLQ/exec'
-            const form = document.forms['google-sheet']
-          
-            form.addEventListener('Submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-                .catch(error => console.error('Error!', error.message))
-            })
+let url = 'https://script.google.com/macros/s/AKfycbyA7oUnDuFd-5wJB-MbT4qx2nC3qXwNuSpVa_x9cgWF4edyqT3bMdFglmNTYOzd8-iG/exec'
+    let form = document.querySelector('#form');
+    form.addEventListener("submit", (e) =>{
+        e.target.btn.innerHTML = "Submitting...";
+        let d = new FormData(form)
+        fetch(url,{
+            method:"POST",
+            body:d
+        }).then((res) => res.text())
+        .then((finalRes) =>{
+            e.target.btn.innerHTML = "Submitted";
+            console.log(finalRes)
+            form.reset();
+
+        })
+        e.preventDefault();
+    })

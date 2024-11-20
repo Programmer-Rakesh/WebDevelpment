@@ -1,0 +1,217 @@
+/* *{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body, html{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 500px;
+}
+
+.container{
+    padding: 60px;
+    border-radius: 10px;
+    background-color: rgb(10, 23, 141);
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 400px;
+    height: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.main{
+    border: red solid 3px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-size: 20px;
+}
+#date{
+    border: red solid 3px;
+    width: 400px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.main1{
+    border: red 3px solid;
+    padding: 30px;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    top: 80px;
+    row-gap: 30px;
+}
+.stopwatch{
+    position: relative;
+    top: 10px;
+    
+    width: 300px;
+    height: 200px;
+}
+#stopwatch{
+    position: relative;
+    top: 35px;
+}
+
+.btn{
+    position: relative;
+    top: 5px;
+    width: 400px;
+    height: 25px;
+    top: 70px;
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+#start{
+    padding: 4px;
+    width: 60px;
+}
+#pause{
+    padding: 4px;
+    position: relative;
+    left: 40px;
+    width: 60px;
+}
+#restart{
+    padding: 4px;
+    position: relative;
+    left: 85px;
+    width: 60px;
+} */
+
+
+*{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.container {
+    /* overflow: hidden; */
+    height: 1000px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 140px;
+    left: 890px;
+
+}
+#date {
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 20px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    top: 20px;
+}
+
+#clock {
+    width: 230px;
+    height: 80px;
+    font-size: 50px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 33px;
+    left: 110px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 255, 115, 0.178);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.main {
+    height: 180px;
+    width: 450px;
+    background: rgba(2, 4, 29, 0.295);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    height: 260px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.main1 {
+    border: 10px solid transparent;
+    padding-top: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    width: 320px;
+    height: 230px;
+    position: relative;
+    top: 10px;
+    left: 300px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.stopwatch {
+    font-size: 24px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size: 38px;
+}
+
+.btn1 {
+    padding: 3px;
+    width: 65px;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#start {
+    background-color: greenyellow;
+}
+#start:hover{
+    background: rgba(5, 116, 9, 0.479);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+#pause {
+    background-color: yellow;
+}
+#pause:hover{
+    background: rgba(159, 170, 5, 0.425);
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+#restart {
+    background-color: red;
+}
+#restart:hover {
+    background: rgba(165, 10, 10, 0.39);
+    backdrop-filter: blur(10px);
+    color: white;
+}
