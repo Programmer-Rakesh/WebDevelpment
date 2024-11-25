@@ -56,13 +56,24 @@ else{
 
 // Checking if an array is empty or not :
 
-let items = [1];
+// let items = [1];
 
-console.log(items.length);
+// console.log(items.length);
 
-if (items.length === 0){
-    console.log("Empty")
-}
-else{
-    console.log("Not empty")
-}
+// if (items.length === 0){
+//     console.log("Empty")
+// }
+// else{
+//     console.log("Not empty")
+// }
+
+
+
+
+/* You have an aray named 'popularTeas' containing "gren tea", "oolong tea", and "chai". Create a soft copy of this array named softCopyTeas*/ 
+
+let popularTeas = ["green tea", "oolong tea", "chai"]
+let var1 = 5;
+let var2 = var1;
+var1 = 9;
+console.log(var2);

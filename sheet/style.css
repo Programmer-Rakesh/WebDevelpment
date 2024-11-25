@@ -7,7 +7,6 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        overflow: hidden;
 }
 .container{
     display: flex;
@@ -27,12 +26,13 @@
     /* background-color: #274D60; */
     background-color: rgba(118, 176, 196, 0);
     backdrop-filter: blur(3px);
+    
 }
 h3{
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 32px;
-    background-color: rgba(35, 152, 156, 0.712);
+    background-color: rgba(27, 122, 126, 0.712);
     backdrop-filter: blur(20px);
     width: 20%;
     display: flex;
@@ -61,7 +61,7 @@ h3{
 .input::placeholder,
 .date::placeholder,
 .text::placeholder {
-    color: rgb(37, 36, 36);
+    color: rgb(68, 61, 61);
     /* White with opacity */
 }
 .date{
@@ -123,6 +123,20 @@ h3{
 .b2:hover{
     background-color: rgba(255, 0, 0, 0.267);
 }
+p{
+    display: flex;
+    top: 300px;
+}
+/* p{
+    width: 20%;
+    display: flex;
+    position: relative;
+    top: 950px;
+    left: 710px;
+    padding: 20px;
+    font-weight: bold;
+} */
+
 
 @media(max-width:555px){
     .container{
