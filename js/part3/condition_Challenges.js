@@ -72,8 +72,14 @@ else{
 
 /* You have an aray named 'popularTeas' containing "gren tea", "oolong tea", and "chai". Create a soft copy of this array named softCopyTeas*/ 
 
-let popularTeas = ["green tea", "oolong tea", "chai"]
-let var1 = 5;
-let var2 = var1;
-var1 = 9;
-console.log(var2);
+// let popularTeas = ["green tea", "oolong tea", "chai"]
+// let softCopyTeas = popularTeas;
+// popularTeas.pop();
+// console.log(softCopyTeas);
+// console.log(popularTeas);
+
+
+
+/* You have an array 'topCities' containing '"Berlin"', "Singapore", and "New York". Create a hard copy of this array named 'hardCopyCities' */
+
+let topCities = []
