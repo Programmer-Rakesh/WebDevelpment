@@ -48,3 +48,26 @@ do{
 
 /* Write a 'for' loop that multiplies each elememt in the array '[2, 4, 6]' by 2 and stores the result in a new array named 'multipliedNumbers'. */
 
+let multipliedNumbers = []
+let numbers = [2, 4, 6]
+
+for (let l = 0; l < numbers.length; l++) {
+    takeNumber = number[l] * 2;
+    multipliedNumbers.push(takeNumber);
+    // or :
+    // multipliedNumbers.push(numbers[l] * 2)
+}
+console.log(multipliedNumbers);
+
+
+
+/* Write a 'for' loop that lists all the cities in the array '["Paris", "New York", "Tokyo", "London"]' and stores each city in a new array named 'cityList */
+
+let cities = ["Paris", "New York", "Tokyo", "London"];
+let cityList = []
+
+for(let c = 0; c < cities.length; c++){
+    const mycity = cities[c];
+    cityList.push(mycity);
+}
+console.log(cityList);
