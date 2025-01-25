@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech</title>
+</head>
+
+<body>
+    <div>
+        <input type="text", id = "t">
+        <button class="button" onclick="speak()">speak</button>
+    </div>
+    <div>
+        <input type="text" name="result" id="f">
+    </div>
+
+    <script>
+
+        function search(){
+            let okay = document.getElementById("t").value;
+            let qq = document.getElementById("f");
+
+            if(okay === "what is your name"){
+                qq.value = "Rakesh Roy";
+            }else{
+                qq.value = "Hoittt";
+            }
+
+        }
+
+
+        function speak() {
+            search();
+            let msg = new SpeechSynthesisUtterance();
+            msg.text = document.getElementById('f').value;
+            window.speechSynthesis.speak(msg);
+        }
+    </script>
+</body>
+
+</html>
