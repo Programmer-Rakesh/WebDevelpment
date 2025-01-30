@@ -14,6 +14,7 @@
     </div>
     <div>
         <input type="text" name="result" id="f">
+        <input type="text" name="result" id="r">
     </div>
 
     <script>
@@ -21,9 +22,11 @@
         function search(){
             let okay = document.getElementById("t").value;
             let qq = document.getElementById("f");
+            let ww = document.getElementById("r");
 
-            if(okay === "what is your name"){
+            if(okay === "what is your name" || okay === "What is your name"){
                 qq.value = "Rakesh Roy";
+                ww.value = "Hoittt";
             }else{
                 qq.value = "Hoittt";
             }
@@ -35,6 +38,8 @@
             search();
             let msg = new SpeechSynthesisUtterance();
             msg.text = document.getElementById('f').value;
+            window.speechSynthesis.speak(msg);
+            msg.text = document.getElementById('r').value;
             window.speechSynthesis.speak(msg);
         }
     </script>
