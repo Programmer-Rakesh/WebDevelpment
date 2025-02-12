@@ -4,10 +4,10 @@ let remainder = 9 % 2;
 let expo = 2 ** 3;
 
 let myscore = 110;
-myscore++;
+myscore++;            // Increment
 
 let credits = 56;
-credits--;
+credits--;            // Decrement
 
 // Comparison operation
 
