@@ -1,3 +1,4 @@
+// Function, arrow function
 /* 1. Write a function named 'makeTea' that takes one parameter, 'typeOfTea' and returns a string like '"Making green tea"' when called with '"green tea"'. Store the result in a variable named 'teaOrder.*/
 
 function makeTea(typeOfTea){
@@ -19,3 +20,14 @@ function orderTea(teaType){
 
 let orderConfirmation = orderTea("chai")
 console.log(orderConfirmation);
+
+
+/*3. Write an array function named 'calculateTotal' that takes two parameters: 'price' and quantity'. The function should return the total cost by multiplying the 'price' and 'quantity'. */
+
+const calculateTotal = (price, quantity) => {
+    return price * quantity;
+}
+
+let totalCost = calculateTotal(499, 100);
+
+console.log(totalCost);
