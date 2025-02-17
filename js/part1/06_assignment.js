@@ -3,4 +3,5 @@ let num1 = 10;
 
 num1 += 5;   // num1 = num1 + 5
 
-console.log(num1);
+console.log(num1);    // This will print 15
+console.log(score);   // This will print 21

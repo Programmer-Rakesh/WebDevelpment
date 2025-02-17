@@ -6,3 +6,16 @@ function makeTea(typeOfTea){
 }
 let teaOrder = makeTea("lemon tea");
 console.log(teaOrder);
+
+
+/* 2. Create a function named 'orderTea' that takes one parameter, 'teaType'. Inside this function named 'confirmedOrder' that returns a message like '"Order confirmed for chai"'. Call 'confirmOrder' from within 'orderTea' and returns the result. */
+
+function orderTea(teaType){
+    function confirmedOrder(){
+        return 'Order confirmed for chai';
+    }
+    return confirmedOrder()
+}
+
+let orderConfirmation = orderTea("chai")
+console.log(orderConfirmation);

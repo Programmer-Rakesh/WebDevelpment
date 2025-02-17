@@ -4,8 +4,8 @@ let balance = 120;
 let anaotherBalance = new Number(120)
 
 console.log(balance);          // Will print "120"
-console.log(anaotherBalance.valueOf());  // Will print "120"
 
+console.log(anaotherBalance.valueOf());  // Will print "120"
 console.log(anaotherBalance);  // Will print "Number: 120"
 
 console.log(typeof balance);   // Prints the type of data "Number"
