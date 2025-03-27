@@ -1,0 +1,85 @@
+/* --------Intro-------- */
+body {
+    background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.text-container {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    color: #00ff00;
+    /* Retro green color */
+    white-space: nowrap;
+    overflow: hidden;
+    position: fixed;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    animation: typing 2s steps(18, end) infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    80% {
+        width: 100%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-right: 2px solid #00ff00;
+        /* Cursor effect */
+    }
+
+    50% {
+        border-right: 2px solid transparent;
+    }
+}
+
+@keyframes vanish {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.text-container::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: vanish 1.5s 4s forwards;
+    /* Wait 4s (typing duration) before vanishing */
+}

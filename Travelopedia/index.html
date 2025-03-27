@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        body {
+            background-image: url('images/b1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            
+        }
+        /* .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0);
+        } */
+
+        /* .nav-container {       
+            position: relative;
+            top: 43px;
+            width: 45%;
+            left: 820px;
+        } */
+
+        nav {
+            position: absolute;
+            position: fixed;
+            height: 8%;
+            width: 100%;
+            border-radius: 0px;
+            background-color: seagreen;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 3px;
+        }
+        nav .logo{
+            text-decoration: underline;
+            font-size: 35px;
+            color: white;
+            font-weight: bold;
+            line-height: 60px;
+            padding-left: 100px;
+        }
+        .hh22{
+            font-weight: bold;
+        }
+        
+
+        .nav ul {
+            /* font-size: larger; */
+            float: right;
+            /* margin-right: 100px; */
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            column-gap: 150px;
+            align-items: center;
+            position: relative;
+            right: 50px;
+            top: 13px;
+        }
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 10px;
+            line-height: 50px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 0px 10px;
+            position: relative;
+            display: block;
+        }
+
+        .nav .hh22:hover {
+            color: #000000; 
+        }
+        /* .nav .register::after {
+            content: none;
+        }
+        .nav .register:hover::after {
+            transform: none;
+        } */
+         .nav .hh22[href="##"]:hover::after {
+    content: none;
+}
+        
+        .nav a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: rgb(255, 255, 255);
+            transform: scale(0);
+            transition: transform 0.4s ease-in-out;
+            
+        }
+
+        .nav a:hover::after {
+            transform: scale(1);
+        }
+
+        .nav .dropdown-content {
+            display: none;
+            width: 170px;
+        }
+
+        .ab:hover {
+            background-color: rgba(13, 43, 173, 0.589);
+        }
+
+        .nav .dropdown:hover .dropdown-content {
+            display: block;
+            position: absolute;
+            background-color: rgba(24, 47, 146, 0.418);
+        }
+
+        .nav .ab::after {
+            content: none;
+        }
+
+        .log{
+            /* border: red solid 3px; */
+            width: 140px;
+            display: flex;
+            flex-direction: row;
+            padding-right: 0px;
+        }
+        button{
+            background-color: rgba(255, 255, 255, 0.226);
+            border-radius: 5px;
+            padding: 6px;
+            color: white;
+            font-weight: bold;
+        }
+        #pp{
+            position: relative;
+            left: 25px;
+            
+        }
+        /* .name1{
+            width: 310px;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            left: 250px;
+            bottom: 5px;
+            
+        }
+        .name{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            font-size: 45px;
+            color: white;
+            text-decoration: underline;
+        } */    
+
+        .planes{
+            display: flex;
+            color: white;
+            position: absolute;
+            width: 12%;
+            top: 163px;
+            left: 24px;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .line{
+            color: white;
+            border: rgb(255, 255, 255) solid 1px;
+            position: relative;
+            top: 260px;
+            width: 20%;
+            left: 255px;
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="overlay" ></div>  -->
+
+
+
+    <!-- Navigation bar  -->
+
+    <div class="nav-container">
+        <nav class="nav">
+
+            <label class="logo">Travelopedia</label>
+            <ul>
+                <!-- <li class="hh22" > <a href="./index.html">Home</a> </li> -->
+                <li > <a class="hh22" href="./index.html">Home</a> </li>
+    
+                <li class="dropdown">
+                    <a class="hh22" href="#">Continents</a>
+                    <div class="dropdown-content">
+                        <a class="ab" href="#">Africa</a>
+                        <a class="ab" href="#">Antartica</a>
+                        <a class="ab" href="#">Asia</a>
+                        <a class="ab" href="#">Europe</a>
+                        <a class="ab" href="#">North America</a>
+                        <a class="ab" href="#">South America</a>
+                        <a class="ab" href="#">Australia</a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="hh22" href="./index.html">About</a>
+                    <div class="dropdown-content">
+                        <a class="ab" href="#">Wbsite</a>
+                        <a class="ab" href="#">Team</a>
+                        <a class="ab" href="#">Contact</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="hh22" href="##">Login / Register</a>
+                </li>
+
+                <!-- <div class="log" >
+                    <li> <button type="button">Register</button> </li>
+                    <li id="pp" > <button class="login">Sign in</button> </li>
+                </div> -->
+            </ul>
+        </nav>
+    </div>
+
+
+    <!-- <div class="name1">
+        <h1 class="name">Travelopedia</h1>
+    </div> -->
+    
+
+    <div>
+        <p class="planes" >Check instant weather report for your planes.</p>
+        <p class="line" ></p>
+    </div>
+
+
+
+
+    <!-- weather -->
+
+    <div class="container">
+        <div class="search-box">
+            <i class='bx bxs-map'></i>
+            <input type="text" placeholder="enter the location">
+            <button class="bx bx-search"></button>
+        </div>
+        
+    
+        <div class="weather-box">
+            <div class="box">
+                <div class="info-weather">
+                    <div class="weather"></div>
+                    <img src="images/cloud.png" alt="">
+                    <p class="temperature">0<span>℃</span></p>
+                    <p class="description">Broken Clouds</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="weather-details">
+            <div class="humidity">
+                <i class='bx bx-water'></i>
+                <div class="text">
+                    <div class="info-humidity">
+                        <span>0%</span>
+                    </div>
+                    <p>Humidity</p>
+                </div>
+            </div>
+    
+    
+            <div class="wind">
+                <div class="humidity"></div>
+                <i class='bx bx-wind'></i>
+                <div class="text">
+                    <div class="info-wind">
+                        <span>0%</span>
+                    </div>
+                    <p>Wind speed</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="not-found" >
+            <div class="box" >
+                <img src="images/404.png" alt="">
+                <p>Oops! Location not found </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- calender -->
+
+    <div class="hero">
+        <div class="calender">
+            <div class="left">
+                <p id="date">01</p>
+                <p id="day">Sunday</p>
+            </div>
+            <div class="right">
+                <p id="month">January</p>
+                <p id="year">2024</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div>
+        <hr class="line">
+    </div> -->
+    
+    <script src="./script1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

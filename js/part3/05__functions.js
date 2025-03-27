@@ -17,7 +17,6 @@ function orderTea(teaType){
     }
     return confirmedOrder()
 }
-
 let orderConfirmation = orderTea("chai")
 console.log(orderConfirmation);
 
@@ -31,3 +30,13 @@ const calculateTotal = (price, quantity) => {
 let totalCost = calculateTotal(499, 100);
 
 console.log(totalCost);
+
+
+/*4. Write a function named `processTeaOrder` that takes another function, `makeTea`, as a parameter and calls it with the argument '"earl grey"'. Return the result of calling `makeTea`. */
+
+function makeTea(typeOfTea){}
+
+function processTeaOrder(teaFunction){
+    teaFunction()
+}
+processTeaOrder(makeTea)
